@@ -1,0 +1,5 @@
+package components.Busbar;
+
+public enum BusbarStates {
+	NOMINAL, FAILED_TO_CONDUCT, CONDUCTING_OVER_VOLTAGE, CONDUCTING_UNDER_VOLTAGE, SHORT_CIRCUIT
+}
