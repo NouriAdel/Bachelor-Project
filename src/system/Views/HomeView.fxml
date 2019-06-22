@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="homePane" layoutX="16.0" layoutY="25.0" minWidth="250.0" prefHeight="500.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="system.Controllers.HomeController">
+	<children>
+		<Button fx:id="createCompBtn" alignment="CENTER" layoutX="25.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Create a new Component" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+		<Button fx:id="modifyCompBtn" alignment="CENTER" layoutX="25.0" layoutY="175.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Modify ..." textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+ 		<Button fx:id="generateTreeBtn" alignment="CENTER" layoutX="25.0" layoutY="439.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Generate FT" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />	
+ 		<Label alignment="CENTER" layoutX="25.0" layoutY="75.0" prefHeight="30.0" prefWidth="250.0" text=".. or choose a component to modify" textAlignment="CENTER" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+		<ComboBox fx:id="modifyCompCombobox" layoutX="25.0" layoutY="125.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+	</children>
+</AnchorPane>
