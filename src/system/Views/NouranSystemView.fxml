@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="703.0" prefWidth="569.0"
+	xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="system.Controllers.NouranSystemController">
+	<children>
+		<Pane fx:id="mainPane" prefHeight="700.0" prefWidth="561.0"
+			AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="-61.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<Label fx:id="pipeA" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="167.0" layoutY="350.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Pipe A"
+					textAlignment="CENTER" />
+				<Label fx:id="pipeB" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="322.0" layoutY="350.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Pipe B"
+					textAlignment="CENTER" />
+				<Label fx:id="mainPump" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="231.0" layoutY="86.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Main Pump"
+					textAlignment="CENTER" />
+				<Label fx:id="valveA" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="164.0" layoutY="265.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Valve A"
+					textAlignment="CENTER" />
+				<Label fx:id="valveB" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="319.0" layoutY="265.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Valve B"
+					textAlignment="CENTER" />
+				<Label fx:id="mainPipe" alignment="CENTER"
+					contentDisplay="CENTER" layoutX="235.0" layoutY="176.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Main Pipe"
+					textAlignment="CENTER" />
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>
