@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.CheckBox?>
+
+<AnchorPane fx:id="createCompPane" layoutX="16.0" layoutY="25.0" minWidth="250.0" prefHeight="487.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="system.Controllers.CreateComponentController">
+	<children>
+      <Label layoutX="13.0" layoutY="260.0" prefHeight="20.0" prefWidth="44.0" text="State" AnchorPane.leftAnchor="13.0" />
+      <Label fx:id="Type" layoutX="13.0" layoutY="22.0" prefWidth="38.0" text="Type" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="22.0" />
+		<ComboBox fx:id="createCompCombBox" layoutX="89.0" layoutY="16.0" prefHeight="30.0" prefWidth="136.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="16.0">
+		</ComboBox>
+      <Button fx:id="createCompCreateBtn" layoutX="10.0" layoutY="740.0" maxWidth="85.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" text="Create" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="169.0" />
+	  <Button fx:id="createCompCancelBtn" alignment="CENTER" layoutX="151.0" layoutY="740.0" maxHeight="-Infinity" maxWidth="85.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" text="Cancel" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="28.0" />
+      <Label layoutX="13.0" layoutY="75.0" text="Name" AnchorPane.leftAnchor="13.0" />
+      <TextField fx:id="createCompNameTextField" promptText="New Component" layoutX="89.0" layoutY="70.0" prefHeight="30.0" prefWidth="136.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="25.0" />
+      <Label layoutX="13.0" layoutY="139.0" prefHeight="20.0" prefWidth="127.0" text="Input Ports number" AnchorPane.leftAnchor="13.0" />
+      <Spinner fx:id="createCompInputPorts" editable="true" initialValue="0" layoutX="170.0" layoutY="136.0" max="10" min="0" prefHeight="27.0" prefWidth="72.0" AnchorPane.rightAnchor="27.0" />
+      <Label layoutX="13.0" layoutY="180.0" prefHeight="20.0" prefWidth="134.0" text="Output Ports number" AnchorPane.leftAnchor="13.0" />
+      <Spinner fx:id="createCompOutputPorts" editable="true" initialValue="0" layoutX="170.0" layoutY="177.0" max="10" min="0" prefHeight="27.0" prefWidth="72.0" AnchorPane.rightAnchor="27.0" />
+      <ComboBox fx:id="createCompStateCombBox" layoutX="89.0" layoutY="255.0" prefHeight="30.0" prefWidth="136.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="25.0" />
+	  
+	  <Label layoutX="13.0" layoutY="294.0" prefHeight="20.0" prefWidth="250.0" text="ONLY FOR CUSTOMIZED_COMPONENTS" AnchorPane.leftAnchor="13.0" />
+	  <Label layoutX="13.0" layoutY="320.0" prefHeight="20.0" prefWidth="250.0" text="Add a new state or remove an existing one" AnchorPane.leftAnchor="13.0" /> 
+	  <TextField fx:id="createStateNameTextField" promptText="New Customized State" layoutX="89.0" layoutY="350.0" prefHeight="30.0" prefWidth="136.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="25.0" />
+      <Button fx:id="createStateCreateBtn" layoutX="10.0" layoutY="390.0" maxWidth="85.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" text="Add" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="169.0" />
+	  
+	  <Label layoutX="13.0" layoutY="470.0" prefHeight="20.0" prefWidth="250.0" text="Specify behaviour in different cases" AnchorPane.leftAnchor="13.0" /> 
+	  <ComboBox fx:id="direction" layoutX="89.0" layoutY="505.0" prefHeight="30.0" prefWidth="136.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="25.0" />
+	  <ComboBox fx:id="failedComp" layoutX="89.0" layoutY="545.0" prefHeight="30.0" prefWidth="136.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="25.0" />
+	  <ComboBox fx:id="CompBehavior" layoutX="89.0" layoutY="585.0" prefHeight="30.0" prefWidth="70.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="25.0" />
+	  <Button fx:id="failureState" layoutX="10.0" layoutY="700.0" maxWidth="85.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" text="Save" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="169.0" />
+	  <ComboBox fx:id="CustomizedBehavior" layoutX="89.0" layoutY="625.0" prefHeight="30.0" prefWidth="70.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="25.0" />
+	  <Label layoutX="13.0" layoutY="505.0" prefHeight="20.0" prefWidth="250.0" text="Direction" AnchorPane.leftAnchor="13.0" /> 
+	  <Label layoutX="13.0" layoutY="545.0" prefHeight="20.0" prefWidth="250.0" text="Component" AnchorPane.leftAnchor="13.0" /> 
+	  <Label layoutX="13.0" layoutY="585.0" prefHeight="20.0" prefWidth="250.0" text="Comp_State" AnchorPane.leftAnchor="13.0" /> 
+	  <Label layoutX="13.0" layoutY="625.0" prefHeight="20.0" prefWidth="250.0" text="Cust_State" AnchorPane.leftAnchor="13.0" /> 
+	  <CheckBox fx:id="WhereInjected" layoutX="10.0" layoutY="660.0" prefHeight="30.0" prefWidth="70.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="25.0" />
+	  <Label layoutX="30.0" layoutY="665.0" prefHeight="20.0" prefWidth="250.0" text="Failure injected in Customized Component" AnchorPane.leftAnchor="30.0" /> 
+	  
+	  <CheckBox fx:id="IsControl" layoutX="10.0" layoutY="430.0" prefHeight="30.0" prefWidth="70.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="25.0" />
+	  <Label layoutX="30.0" layoutY="435.0" prefHeight="20.0" prefWidth="250.0" text="Customized component sends control singals" AnchorPane.leftAnchor="30.0" /> 
+	  <Button fx:id="removeStateBtn" layoutX="150.0" layoutY="390.0" maxWidth="85.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" text="Remove" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="25.0" />
+	  <CheckBox fx:id="ChangeExisting" layoutX="10.0" layoutY="220.0" prefHeight="30.0" prefWidth="70.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="25.0" />
+	  <Label layoutX="30.0" layoutY="225.0" prefHeight="20.0" prefWidth="250.0" text="Change the state of a predefined component" AnchorPane.leftAnchor="30.0" /> 
+	  
+	
+	</children>
+</AnchorPane>
