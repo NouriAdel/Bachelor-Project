@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+	<StackPane minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+		<VBox>
+			<children>
+				<MenuBar>
+					<menus>
+						<Menu mnemonicParsing="false" text="File">
+							<items>
+								<MenuItem mnemonicParsing="false" text="Close" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Edit">
+							<items>
+								<MenuItem mnemonicParsing="false" text="Delete" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Help">
+							<items>
+								<MenuItem mnemonicParsing="false" text="About" />
+							</items>
+						</Menu>
+					</menus>
+				</MenuBar>
+				<TabPane prefHeight="1000.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+					<tabs>
+						<Tab text="System Components">
+							<content>
+								<AnchorPane>
+									<children>
+										<SplitPane dividerPositions="0.40977443609022557" pickOnBounds="false" prefHeight="800.0" prefWidth="800.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+											<items>
+												<AnchorPane maxWidth="300.0" minHeight="0.0" minWidth="250.0" prefWidth="270.0">
+													<children>
+
+														<fx:include fx:id="homeView" maxWidth="300.0" minWidth="250.0" prefWidth="260.0" source="HomeView.fxml" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+
+														<fx:include fx:id="createComponentView" maxWidth="300.0" minWidth="250.0" prefWidth="260.0" source="CreateComponentView.fxml" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+
+														<fx:include fx:id="modifyComponentView" maxWidth="300.0" minWidth="250.0" prefWidth="260.0" source="ModifyComponentView.fxml" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+
+
+													</children>
+												</AnchorPane>
+
+												<fx:include fx:id="systemView" prefHeight="200.0" prefWidth="200.0" source="SystemView.fxml" />
+
+											</items>
+										</SplitPane>
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab fx:id="resultTab" text="Fault Tree">
+							<content>
+								<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+									<children>
+										<ScrollPane fx:id="scrollPane" hbarPolicy="ALWAYS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+											<content>
+												<AnchorPane fx:id="resultPane">
+													<children>
+														<VBox fx:id="vbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+															<children>
+
+																<Label fx:id="topEvent" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" textAlignment="CENTER" />
+ 
+																<Label fx:id="operator" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" textAlignment="CENTER" />
+
+																<HBox fx:id="hbox" alignment="CENTER" />
+															</children>
+														</VBox>
+														<!-- <ScrollBar fx:id="hScroll" /> <ScrollBar fx:id="vScroll" 
+															orientation="VERTICAL" /> -->
+													</children>
+												</AnchorPane>
+											</content>
+										</ScrollPane>
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab fx:id="eventListTab" text="Events List">
+							<content>
+								<AnchorPane fx:id="eventListMainAnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+									<children>
+										<ScrollPane fx:id="eventListScrollPane" hbarPolicy="ALWAYS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+											<content>
+												<AnchorPane fx:id="eventListresultPane">
+													<children>
+														<VBox fx:id="eventListVBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+															<children>
+
+																
+															</children>
+														</VBox>
+														
+													</children>
+												</AnchorPane>
+											</content>
+										</ScrollPane>
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+					</tabs>
+				</TabPane>
+			</children>
+		</VBox>
+		
+		<AnchorPane pickOnBounds="false" prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <HBox layoutX="594.0" layoutY="7.0" prefHeight="63.0" prefWidth="70.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                     <ImageView fitHeight="61.0" fitWidth="268.0">
+                        <image>
+                           <Image url="@fsd_logo_transparent.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fitHeight="56.0" fitWidth="87.0">
+                        <image>
+                           <Image url="@TUMLogo.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+               </HBox>
+            </children>
+         </AnchorPane>
+		
+	</StackPane>
+	</children>
+ </AnchorPane>
