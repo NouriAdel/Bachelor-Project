@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="703.0" prefWidth="569.0"
+	xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="system.Controllers.HLASystemController">
+	<children>
+		<Pane fx:id="mainPane" layoutX="-71.0" layoutY="-242.0"
+			prefHeight="700.0" prefWidth="561.0" AnchorPane.bottomAnchor="0.0"
+			AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+			AnchorPane.topAnchor="0.0">
+			<children>
+				<Label fx:id="greenValve" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="100.0" layoutY="271.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Green Valve"
+					textAlignment="CENTER" />
+				<Label fx:id="blueValve" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="290.0" layoutY="271.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Blue Valve"
+					textAlignment="CENTER" />
+				<Label fx:id="bluePump" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="291.0" layoutY="90.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Blue Pump"
+					textAlignment="CENTER" />
+				<Label fx:id="greenPump" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="100.0" layoutY="90.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Green Pump"
+					textAlignment="CENTER" />
+				<Label fx:id="pipeG1" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="114.0" layoutY="182.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Pipe G1"
+					textAlignment="CENTER" />
+				<Label fx:id="pipeG2" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="113.0" layoutY="350.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Pipe G2"
+					textAlignment="CENTER" />
+				<Label fx:id="pipeB1" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="300.0" layoutY="182.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Pipe B1"
+					textAlignment="CENTER" />
+				<Label fx:id="pipeB2" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="300.0" layoutY="350.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Pipe B2"
+					textAlignment="CENTER" />
+				<Label fx:id="cylinder" alignment="CENTER" contentDisplay="CENTER"
+					layoutX="206.5" layoutY="433.0"
+					style="-fx-background-color: effcfa; -fx-padding: 10px;" text="Cylinder"
+					textAlignment="CENTER" />
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>
